@@ -1,0 +1,49 @@
+{
+  "name": "amp-webhook",
+  "version": "1.0.0",
+  "description": "Flexible AMP Email Webhook System for handling any form structure",
+  "main": "dist/app.js",
+  "scripts": {
+    "dev": "ts-node src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "check": "tsc --noEmit && echo \"Type check passed\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "amp",
+    "email",
+    "webhook",
+    "express",
+    "typescript"
+  ],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@types/bcryptjs": "^3.0.0",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/morgan": "^1.9.10",
+    "@types/node": "^24.3.0",
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.2.0",
+    "express": "^5.1.0",
+    "express-basic-auth": "^1.2.1",
+    "express-rate-limit": "^8.0.1",
+    "helmet": "^8.1.0",
+    "joi": "^18.0.1",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.1",
+    "node-fetch": "^3.3.2",
+    "nodemon": "^3.1.10",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2",
+    "winston": "^3.17.0"
+  }
+}
